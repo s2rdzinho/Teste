@@ -1,0 +1,68 @@
+/* style.css */
+
+body {
+  margin: 0;
+  background: #222;
+  color: #eee;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+
+#game-container {
+  position: relative;
+  width: 800px;
+  max-width: 100vw;
+  background: #111;
+  border: 3px solid #0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  background: #222;
+  width: 100%;
+  height: auto;
+}
+
+#joystick {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+#btnJump {
+  padding: 15px 25px;
+  background: #0f0;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #111;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0f0aa;
+  transition: background 0.3s ease;
+}
+
+#btnJump:active {
+  background: #0a0;
+}
+
+#hud {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0aa;
+  user-select: none;
+}
+
+#hud > div {
+  margin-bottom: 8px;
+}
